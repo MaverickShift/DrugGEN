@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrugGEN - AI for Drug Discovery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DrugGEN</h1>
+            <p>AI-Powered Drug Discovery Platform</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#user-interface">User Interface</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#healthcare">Healthcare Impact</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#citation">Citation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="overview" class="container">
+        <h2>Overview</h2>
+        <p>DrugGEN is an AI-powered platform designed to accelerate drug discovery by generating novel drug candidates using advanced generative models.</p>
+        <a href="https://github.com/MaverickShift?tab=repositories" class="btn">View on GitHub</a>
+    </section>
+
+    <section id="features" class="container">
+        <h2>Features</h2>
+        <ul>
+            <li>Generative AI for drug candidate generation.</li>
+            <li>Integration with molecular databases.</li>
+            <li>Interactive visualization of molecular structures.</li>
+            <li>Scalable and user-friendly interface.</li>
+            <li>AI-driven analysis of drug interactions and side effects.</li>
+            <li>Predictive modeling for drug efficacy and toxicity.</li>
+        </ul>
+    </section>
+
+    <section id="user-interface" class="container">
+        <h2>User Interface</h2>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="symptoms">Symptoms:</label>
+            <input type="text" id="symptoms" name="symptoms" placeholder="Enter your symptoms (e.g., fever, headache)" required>
+            
+            <label for="location">Location (Optional):</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location (e.g., City)">
+            
+            <label for="allergies">Drug Allergies:</label>
+            <input type="text" id="allergies" name="allergies" placeholder="List any drug allergies">
+            
+            <button id="search">Get Suggestions</button>
+            <p id="output"></p>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <section id="results" class="container hidden">
+        <h2>Your Results</h2>
+        <p><strong>Possible Diseases:</strong> <span id="possibleDiseases"></span></p>
+        <p><strong>Suggested Medicines:</strong> <span id="suggestedMedicines"></span></p>
+        <p><strong>Precautions:</strong></p>
+        <ul id="precautions"></ul>
+        <p><strong>Doctor Suggestions:</strong></p>
+        <ul id="doctorSuggestions"></ul>
+    </section>
+
+    <section id="healthcare" class="container">
+        <h2>Healthcare Impact</h2>
+        <p>The integration of AI in drug discovery has revolutionized healthcare by reducing the time and cost of developing new medicines. Key impacts include:</p>
+        <ul>
+            <li>Faster identification of potential drug candidates.</li>
+            <li>Personalized medicine based on genetic profiling.</li>
+            <li>Early detection and prevention of diseases using AI insights.</li>
+            <li>Improved drug safety through AI-driven risk analysis.</li>
+        </ul>
+    </section>
+
+    <section id="disease-info">
+        <h2>Diseases and Their Details</h2>
+        <ul>
+            <li><strong>COVID-19:</strong> <span class="highlight">Symptoms:</span> Fever, cough, fatigue. <span class="highlight">Effects:</span> Respiratory issues, potential hospitalization.</li>
+    
+            <li><strong>Diabetes:</strong> <span class="highlight">Symptoms:</span> Increased thirst, frequent urination. <span class="highlight">Effects:</span> Long-term organ damage.</li>
+    
+            <li><strong>Hypertension:</strong> <span class="highlight">Symptoms:</span> Headaches, dizziness. <span class="highlight">Effects:</span> Increased risk of heart disease.</li></pre>
+    
+            <li><strong>Influenza:</strong> <span class="highlight">Symptoms:</span> Fever, chills, muscle aches. <span class="highlight">Effects:</span> Severe respiratory distress.</li>
+    
+            <li><strong>Asthma:</strong> <span class="highlight">Symptoms:</span> Shortness of breath, wheezing. <span class="highlight">Effects:</span> Difficulty breathing, increased risk of respiratory infections.</li>
+    
+            <li><strong>Malaria:</strong> <span class = "highlight"> Symptoms:</span> Fever, chills, sweating. <span class = "highlight">Effects:</span> Organ failure, severe anemia.</li>
+    
+            <li><strong>Alzheimer's Disease:</strong> <span class="highlight">Symptoms:</span> Memory loss, confusion. <span class="highlight">Effects:</span> Cognitive decline, loss of independence.</li>
+    
+            <li><strong>Arthritis:</strong> <span class="highlight"> Symptoms:</span> Joint pain, stiffness. <span class = "highlight"> Effects:</span> Reduced mobility, chronic pain.</li>
+                
+            <li><strong>Tuberculosis:</strong> <span class="highlight">Symptoms:</span> Persistent cough, night sweats. <span class="highlight">Effects:</span> Lung damage, weight loss.</li>
+    
+            <li><strong>Dengue:</strong> <span class="highlight">Symptoms:</span> High fever, severe headache. <span class="highlight">Effects:</span> Internal bleeding, low platelet count.</li>
+
+            <li><strong>Chronic Kidney Disease:</strong> <span class = "highlight"> Symptoms:</span> Fatigue, swelling in legs. <span class = "highlight"> Effects:</span> Kidney failure, dialysis dependency.</li>
+
+            <li><strong>Pneumonia:</strong> <span class = "highlight"> Symptoms:</span> Chest pain, difficulty breathing. <span class = "highlight"> Effects:</span> Severe lung infection, hospitalization.</li>
+                
+            <li><strong>Hepatitis B:</strong> <span class = "highlight"> Symptoms:</span> Jaundice, abdominal pain. <span class = "highlight"> Effects:</span> Liver damage, increased risk of cancer.</li>
+                
+            <li><strong>Parkinson's Disease:</strong> <span class = "highlight"> Symptoms:</span> Tremors, muscle stiffness. <span class = "highlight"> Effects:</span> Loss of motor control, speech difficulty.</li>
+                
+            <li><strong>Epilepsy:</strong> <span class = "highlight"> Symptoms:</span> Seizures, confusion. <span class = "highlight"> Effects:</span> Brain function disruption, injury risk.</li>
+                
+            <li><strong>Psoriasis:</strong> <span class = "highlight"> Symptoms:</span> Skin rashes, itching. <span class="highlight">Effects:</span> Chronic inflammation, discomfort.</li>
+                
+            <li><strong>Cholera:</strong> <span class = "highlight"> Symptoms:</span> Severe diarrhea, dehydration. <span class = "highlight"> Effects:</span> Organ failure, fatal if untreated.</li>
+                
+            <li><strong>Leukemia:</strong> <span class="highlight">Symptoms:</span> Fatigue, frequent infections. <span class="highlight">Effects:</span> Weakened immune system, high mortality.</li>
+                
+            <li><strong>Osteoporosis:</strong> <span class="highlight">Symptoms:</span> Bone weakness, fractures. <span class="highlight">Effects:</span> High fracture risk, mobility loss.</li>
+                
+            <li><strong>Migraine:</strong> <span class = "highlight"> Symptoms:</span> Severe headache, nausea. <span class = "highlight"> Effects:</span> Sensory sensitivity, reduced productivity.</li>
+        </ul>
+    
+    </section>
+    
+    <section id="team" class="container">
+        <h2>Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="images/team1.jpg" alt="Team Member 1">
+                <h3>Khushi Jain</h3>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.jpg" alt="Team Member 2">
+                <h3>Ishika Goel</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="citation" class="container">
+        <h2>Citation</h2>
+        <p>If you use DrugGEN in your research, please cite our work:</p>
+        <pre><code>@article{druggen2025,
+        title={DrugGEN: AI-Powered Drug Discovery},
+        author={Khushi Jain and Ishika Goel},
+        journal={Nature},
+        year={2025}
+        }</code></pre>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DrugGEN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="test.js"></script>
+</body>
+</html>
